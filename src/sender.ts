@@ -9,7 +9,7 @@ class Sender {
     }
 
     async sendText(to: string, body: string) {
-        this.client.sendText(to, body)
+        await this.client.sendText(to, body)
     }
 
     private initialize() {
